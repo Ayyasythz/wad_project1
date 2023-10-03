@@ -4,33 +4,51 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>CV ONLINE HANIF</title>
+	<style type="text/css">
+		body, html{
+			height: 100%;
+		}
+		.background-image{
+			background-image: url("logo_telkom.png");
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 25%;
+		
+		}
+		.awal{
+			height: 100%;
+			animation: popout 1s;
+		}
+		@keyframes popout{
+			from{transform: scale(0);}
+			10%{transform: scale(1.2);}
+			to{transform: scale(1.0);}
+		}
+	</style>
 </head>
 <body>
-	<center>
-		<table style="width:100vh;height: 100vh; font-family: sans-serif;" width="100%" >
-			<h1 align="center">BIODATA</h1>
-			<tr>
-				<td style="padding-left: 20px;" width="250px">
-					<img style="border-radius: 8px;"  src="foto.jpg" width="250px" height="250px">
-				</td>
-				<td>
-						<ul>
-						<li >
-							<p style="font-size: 20px;">Nama : Hanif Abyan Ayyasyi</p>
-						</li>
-						<li>
-							<p style="font-size: 20px;">Tempat, Tanggal Lahir : Bandung, 18 Juli 2004</p>
-						</li>
-						<li>
-							<p style="font-size: 20px;" >Jenis Kelamin : Laki - Laki</p>
-						</li>
-					</ul>
-				</td>
-			</tr>
-		</table>
-	</center>
-	<table style="width:100%;height: 100vh;font-family: sans-serif;" width="100%" border="2px" >
-		<h1 align="center">Riwayat Pendidikan</h1>
+	<div class="background-image awal">
+	</div>
+	
+	<div style="background-color: cornflowerblue; padding: 10px;">
+		<div style="margin: 10px 10px 10px 10px;height: inherit;">
+			<div style="display: flex;">
+				<img style="border-radius: 8px;" src="foto.jpg" width="250px" height="250px">
+				<div style="font-family: sans-serif; display: inline; margin-left: 20px;">
+					<h1 >
+						Hanif Abyan Ayyasyi
+					</h1>
+					<h2>Bandung, 18 July 2004</h2>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="background-image">
+		<h1 style="font-family:sans-serif;" align="center">Riwayat Pendidikan</h1>
+		<table style=" height: 100vh; width: 100%;font-family: sans-serif;" width="100%" border="2px" >
 			<tr>
 				<th>
 					Tahun
@@ -73,7 +91,14 @@
 					SMK NEGERI 4 BANDUNG
 				</td>
 			</tr>
-	</table>
+		</table>	
+	</div>
+
+
+	<center>
+		
+	</center>
+	
 	<table style="width:100%;height: 100vh; font-family: sans-serif;">
 		<tr>
 			<td>
@@ -93,10 +118,6 @@
 			</td>
 		</tr>
 	</table>
-	
-
-		
-
 
 </body>
 </html>
